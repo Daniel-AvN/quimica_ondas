@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savez-vous?</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="https://images.vexels.com/content/164028/preview/france-flag-language-icon-circle-a36a3a.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Kdam+Thmor+Pro&family=Nova+Slim&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        
+        <div id="toggle-menu" class="toggle-menu">
+            
+            <label for="toggle-menu-checkbox">
+
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </label>
+        </div>
+        <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox">
+        <ul id="main-menu" class="main-menu">
+
+
+            <div class="header__logo">
+
+            </div>
+
+            <li class="main-menu__item"> <i class="fa-solid fa-house"></i> <a href="index.html" class="main-menu__link">Modelos atómicos</div> </li>
+
+            <li class="main-menu__item"><i class="fa-regular fa-compass"></i> <a href="ef.html" class="main-menu__link">Efecto Fotoeléctrico</div> </li>
+
+            <li class="main-menu__item">
+                 <!-- <i class="fa-sharp fa-solid fa-file-code"></i>  -->
+                 <i class="fa-regular fa-rectangle-list"></i>
+                 <a href="cuanticos.html" class="main-menu__link">Números cuánticos</div> </li>
+
+            <li class="main-menu__item"> <i class="fa-solid fa-phone"></i> <a href="mecanica.html" class="main-menu__link">mecanica</div> </a> </li>
+        </ul>
+
+    </header>
+
+    <main>
+        
+        <article class="article">
+            <h1 class="title main__title">Química Universitaria</h1>
+        </article>
+
+        <article class="article curses" id="curses">
+
+            <br><br>
+            <br><br>
+
+            <h2 class="subtitle">Primer parcial</h2>
+
+            <section class="curse curse2 curse-js w77">
+                <div class="curse__link" href="js.html"><h3 class="curse__title"> <span class="curse__languaje">Números cuánticos</span> </h3></div>
+                <br><br>
+                ingresa el número cuántico principal y te aparecerá los demás números cuánticos que correspondan.
+                <br><br>
+                <form  class="curse__link" id="quantumForm">
+                    <label for="principalQuantumNumber">Número cuántico principal (n):</label>
+                    <br>
+                    <input type="number" id="principalQuantumNumber" name="n" min="1" required>
+                    <br>
+                    <button type="submit">Calcular</button>
+                </form>
+    
+                <table id="resultsTable"  class="curse__title results-table" style="display:none; margin-top: 20px;">
+                    <thead class="curse__title">
+                        <tr class="curse__title">
+                            <th class="curse__title">Nivel (n)</th>
+                            <th class="curse__title">Subnivel (l)</th>
+                            <th class="curse__title">Designación del Orbital (ml)</th>
+                            <th class="curse__title">Spin (ms)</th>
+                            <th class="curse__title">Número de Orbitales</th>
+                            <th class="curse__title">Número de Electrones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                    </tbody>
+                </table>
+
+                
+
+            </section>
+            
+           
+ 
+ 
+        </article>
+        
+    </main>
+
+    <footer>
+
+        <br><br><br><br>
+        Creado por: Leonardo Daniel Aviña Neri
+    </footer>
+
+</body>
+</html>
