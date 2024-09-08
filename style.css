@@ -65,7 +65,7 @@ body{
     width: 70px;
     height: 70px;
     /* background-color: #fff; */
-    background-image: url('https://images.vexels.com/content/164028/preview/france-flag-language-icon-circle-a36a3a.png');
+    background-image: url('assets/logo.png');
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
@@ -148,6 +148,7 @@ body{
         /* background-color: #fff; */
         background-image: url('assets/logo.png');
     }
+
 }
 
 /* main */
@@ -296,6 +297,16 @@ a{
 
 @media screen and (max-width: 768px) { /*a cel*/
 
+
+    
+    table {
+        font-size: 5px !important;
+    }
+
+    td{
+        font-size: 12px;
+    }
+
     body{
         justify-content: center;
         align-items: center;
@@ -315,7 +326,7 @@ a{
     }
 
     .section{
-        width: 80%;
+        width: 90%;
     }
 
     .curses{
@@ -325,7 +336,7 @@ a{
     }
 
     .curse{
-        width: 300px;
+        width: 30%;
     }
 
     .w77, .w50{
@@ -336,6 +347,13 @@ a{
     
      .h900{
         min-height: 1700px;
+    }
+
+    .cuanticos{
+        max-width: 1000%;
+        /* width: 100000vw; */
+        padding: 11px;
+        /* background-color: #fff; */
     }
 
 }
