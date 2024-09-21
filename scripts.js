@@ -1,25 +1,27 @@
+// LEONARDO DANIEL AVIÑA NERI 
+
 document.getElementById('quantumForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const n = parseInt(document.getElementById('principalQuantumNumber').value);
     const resultsBody = document.getElementById('resultsBody');
     resultsBody.innerHTML = '';
     
-    // Mostrar la tabla
+    // mostrar tabla
     document.getElementById('resultsTable').style.display = 'table';
 
     let totalElectrons = 0;
     let totalOrbitals = 0;
 
-    // Para cada subnivel l (de 0 a n-1)
+    // para cada subnivel l (de 0 a n-1)
     for (let l = 0; l < n; l++) {
-        const sublevelName = getSublevelName(l); // Obtener el nombre del subnivel (s, p, d, f)
+        const sublevelName = getSublevelName(l); // obtener el nombre del subnivel L=s, p, d, f
         const maxElectronsInSublevel = 2 * (2 * l + 1); // 2 * número de orbitales = número máximo de electrones
         totalElectrons += maxElectronsInSublevel;
-        totalOrbitals += 2 * l + 1; // Número de orbitales en el subnivel
+        totalOrbitals += 2 * l + 1; // número de orbitales en el subnivel
         
-        // Para cada valor de ml (-l a +l)
+        // para cada valor de ml (-l a +l)
         for (let ml = -l; ml <= l; ml++) {
-            // Cada orbital puede tener dos electrones con diferentes spins (ms = +1/2 o -1/2)
+            // cada orbital puede tener dos electrones con diferentes spins (ms = +1/2 o -1/2)
             for (let ms of [+0.5, -0.5]) {
                 const row = document.createElement('tr');
                 row.innerHTML = `
